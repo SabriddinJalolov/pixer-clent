@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap");
+:root {
+  --main-color-silver: #f2f4f6;
+  --site-black-color: #101010;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+/************************** Header styles start **************************/
+.site-header {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 33px;
+  
+border-bottom: 1px solid #EEEEF4;
+}
+
+.container {
+  width: 1256px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__start {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo-img {
+  width: 120px;
+  height: 32px;
+  margin-right: 45px;
+}
+
+.site-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 265px;
+  padding-left: 0;
+}
+
+.site-nav__link {
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+padding-left: 30px;
+color: #101010;
+}
+
+
+
+.site-header__end-sign-up {
+
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px 24px;
+width: 156px;
+height: 41px;
+left: 1172px;
+top: 24px;
+background: #101010;
+border-radius: 6px;
+  color: #fff;
+}
+/************************** Header styles end **************************/
+
