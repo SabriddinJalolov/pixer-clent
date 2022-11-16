@@ -2,6 +2,12 @@
 :root {
   --main-color-silver: #f2f4f6;
   --site-black-color: #101010;
+  --section-bg-color:
+  --text-color:
+  --hover-color:
+  --text-desc-color:
+  --img-bg-color:
+  --subtext-color:
 }
 
 * {
@@ -28,6 +34,9 @@ body {
   padding-top: 32px;
   padding-bottom: 33px;
   border-bottom: 1px solid #eeeef4;
+  position: sticky;
+  top: 0;
+ 
 }
 
 .container {
@@ -42,11 +51,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+
 }
 
 .site-header__start {
   display: flex;
   align-items: center;
+  
+}
+.site-header__logo:hover{
+  opacity: 0.6;
+}
+.site-header__logo:active{
+  opacity: 0.6;
 }
 
 .site-header__logo-img {
@@ -71,6 +89,26 @@ body {
   padding-left: 30px;
   color: #101010;
 }
+.site-nav__link:hover{
+  
+
+  color: #1AAB7B;
+}
+
+.site-nav__link:active{
+ color: #70d3b2;
+}
+.site-header__end-sign-up:hover{
+  background: #fff;
+  color: #1AAB7B;
+  border: 1px solid #1AAB7B;
+}
+.site-header__end-sign-up:active{
+  background: #636F87;
+  color: #fff;
+ 
+}
+
 
 .site-header__end-sign-up {
   display: flex;
@@ -117,6 +155,7 @@ body {
 
 .site-section_learn-more {
   display: flex;
+
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 40px;
@@ -126,6 +165,15 @@ body {
   background: #1aab7b;
   border-radius: 6px;
   border: none;
+}
+.site-section_learn-more:hover{
+  background:#fff;
+  border: 1px solid #1AAB7B;
+
+}
+.learn-more:hover{
+  color: #1AAB7B;
+
 }
 
 .learn-more {
@@ -142,7 +190,7 @@ body {
 .site_main_wrapper {
   display: flex;
   padding-top: 91px;
-  padding-bottom: 156px;
+  padding-bottom:156px;
 }
 
 .video {
@@ -159,10 +207,25 @@ body {
   justify-content: center;
 }
 .main_section {
- 
+  
   background: #f2f4f6;
 }
 
+.main_section_title{
+  width: 383px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+left: 529px;
+top: 50px;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 140%;
+text-align: center;
+color: #101010;
+}
 .it-jobs-section {
   background-color: var(--section-bg-color);
   padding-top: 50px;
@@ -207,8 +270,8 @@ body {
 }
 
 .main_section_item:hover
-  > .it-jobs-section-item-start
-  > .it-jobs-section-item-title {
+> .it-jobs-section-item-start
+> .it-jobs-section-item-title {
   color: var(--text-desc-color);
 }
 
@@ -277,7 +340,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 16px;
   width: 307px;
+  
   margin: auto;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -290,6 +356,7 @@ body {
 .we_work_section_text {
   width: 650px;
   margin: auto;
+  padding-bottom: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,7 +366,7 @@ body {
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-
+  
   color: #636f87;
 }
 
@@ -329,7 +396,7 @@ body {
 .section_clarify_first_img {
   margin-right: 32px;
   margin-bottom: 100px;
-
+  
 }
 
 .section_clarify_text_let {
@@ -353,18 +420,159 @@ body {
 
 .section_clarify_titl {
   margin-right: 32px;
-
+  
 }
 .section_clarify_im{
   display: flex;
   flex-grow: 1;
   padding-left: 104px;
-    margin-bottom: 100px;
-
-
+  margin-bottom: 100px;
+  
+  
 }
 
 /*****thourt section end*******/
+/******last section start******/
+.imput_section_title{
+  display: flex;
+  justify-content: center;
+  width: 411px;
+  margin: auto;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 140%;
+text-align: center;
+color: #101010;
+}
 
+.imput_section_text{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 650px;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #636F87;
+
+}
+/*********form start***********/
+.box-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1008px;
+  padding: 64px 312px;
+  background-color: #f2f4f6;
+  border-radius: 6px;
+}
+.name::-webkit-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name::-moz-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name:-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name::-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name,
+.input-number,
+.site-select {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 21px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #636f87;
+  border-left: none;
+  outline: 0;
+  margin-bottom: 51px;
+}
+.input-number::-webkit-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.input-number::-moz-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.input-number:-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.input-number::-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.input-number::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.input-bar-section-btn {
+  width: 180px;
+  padding: 20px 69.5px;
+  margin: 0 auto;
+  background: var(--hover-color);
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--text-desc-color);
+}
+.input-bar-section-bottom-desc {
+  margin-top: 24px;
+  text-align: center;
+  color: #858ea2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+
+/******last section end*******/
 
 /**************************main style end **************************/

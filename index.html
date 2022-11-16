@@ -48,7 +48,7 @@
       <div class="site-header__end">
         
         
-        <a class="site-header__end-sign-up" href="#"> (239) 555-0108 </a>
+        <a class="site-header__end-sign-up" href="./index.html"> (239) 555-0108 </a>
       </div>
     </div>
   </div>
@@ -63,11 +63,11 @@
           <h1 class="site-section-text">Take your business to the next level take out</h1>
           <p class="site-section-desc">Nullam laoreet nec turpis et ultrices. Duis sit ame.t quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
           <button class="site-section_learn-more" type="button">
-            <a class="learn-more" href="#">Learn more</a>
+            <a class="learn-more" href="./index.html">Learn more</a>
           </button>
         </div>
         <div class="you_tube_video">
-          <iframe class="video" width="592" height="334" src="https://www.youtube.com/embed/KS3Va_LmS4U" title="CSS | 19. Asosiy xossalar yordamida loyihani yaxshilash (2-qism)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video" width="592" height="334" src="https://www.youtube.com/embed/KS3Va_LmS4U" title="CSS | 19. Asosiy xossalar yordamida loyihani yaxshilash (2-qism)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -184,22 +184,72 @@
             height="390">
           </div>
         </div>
-
+        
         <div class="section_clarify_img">
-            <img class="section_clarify_first_img" src="./image/uchinchi_rasm.png" alt="ofis_img"
-            width="488"
-            height="390">
-            
-            <div class="section_clarify_title">
-              <h3 class="section_clarify_text">Let's clarify the requirements</h3>
-              <p class="section_clarify_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+          <img class="section_clarify_first_img" src="./image/uchinchi_rasm.png" alt="ofis_img"
+          width="488"
+          height="390">
+          
+          <div class="section_clarify_title">
+            <h3 class="section_clarify_text">Let's clarify the requirements</h3>
+            <p class="section_clarify_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           </div>
+        </div>
         
       </div>
     </div>
   </section>
   <!--thourt section and-->
+  <!---last section start-->
+  <section class="last_imput_section">
+    <div class="container">
+      <h2 class="imput_section_title">Leave your number and we'll call you back</h2>
+      <p class="imput_section_text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+      <form
+              class="box-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              >
+              <input class="name" 
+              type="text" 
+              name="name"
+               id="name"
+                aria-label="Name" 
+                placeholder="Name" 
+                required>
+              <input class="input-number" type="tel" name="tel" id="number" aria-label="number" placeholder="Phone number" required>
+              <select class="site-select" 
+              name="Description" 
+               aria-label="Description">
+                  <option class="box-options" 
+                  value="Descriptions"
+                   hidden>Description
+                  </option>
+                  <option
+                   class="box-options" 
+                   value="Foundation">Foundation
+                  </option>
+                  <option 
+                  class="box-options" 
+                  value="Backend">Backend
+                </option>
+                  <option 
+                  class="box-options" 
+                  value="Frontend">Frontend
+                </option>
+                 <option 
+                  class="box-options" 
+                  value=".Net">.Net
+                </option>
+              </select>
+              <button class="input-bar-section-btn" type="submit">Send</button>
+              <p class="input-bar-section-bottom-desc">
+                  We call back in 10-30 minutes, guaranteed!
+              </p>
+          </form>
+    </div>
+  </section>
+  <!---last section end-->
 </main>
 <!--Main end-->
 </body>
