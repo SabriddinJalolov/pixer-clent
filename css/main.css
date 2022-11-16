@@ -4,7 +4,6 @@
   --site-black-color: #101010;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -23,13 +22,13 @@ body {
   font-weight: 700;
 }
 
-/************************** Header styles start **************************/
+/****************** Header styles start **********************/
 .site-header {
   background-color: #fff;
   padding-top: 32px;
   padding-bottom: 33px;
-  
-border-bottom: 1px solid #EEEEF4;
+  border-bottom: 1px solid #eeeef4;
+
 }
 
 .container {
@@ -38,23 +37,27 @@ border-bottom: 1px solid #EEEEF4;
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+
 }
 
 .site-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .site-header__start {
   display: flex;
   align-items: center;
+
 }
 
 .site-header__logo-img {
   width: 120px;
   height: 32px;
   margin-right: 45px;
+
 }
 
 .site-nav__list {
@@ -62,33 +65,142 @@ border-bottom: 1px solid #EEEEF4;
   justify-content: space-between;
   width: 265px;
   padding-left: 0;
+
 }
 
 .site-nav__link {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-padding-left: 30px;
-color: #101010;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 30px;
+  color: #101010;
+
 }
 
-
-
 .site-header__end-sign-up {
-
- display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 12px 24px;
-width: 156px;
-height: 41px;
-left: 1172px;
-top: 24px;
-background: #101010;
-border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 24px;
+  width: 156px;
+  height: 41px;
+  left: 1172px;
+  top: 24px;
+  background: #101010;
+  border-radius: 6px;
   color: #fff;
 }
 /************************** Header styles end **************************/
 
+/**************************main style start **************************/
+.site-section-text{
+width: 550px;
+margin-top: 0;
+margin-bottom: 0;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 140%;
+color: #101010;
+
+}
+
+.site-section_text_decs_wrapper{
+  margin-right: 74px;
+}
+
+.site-section-desc{
+width: 537px;
+padding-bottom: 40px;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #636F87;
+}
+
+.site-section_learn-more{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 40px;
+gap: 10px;
+width: 168px;
+height: 59px;
+background: #1AAB7B;
+border-radius: 6px;
+border: none;
+}
+
+.learn-more{
+  width: 88px;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+text-align: center;
+color: #FFFFFF;
+}
+
+.site_main_wrapper{
+  display: flex;
+  padding-top: 91px;
+  padding-bottom: 156px;
+
+}
+
+.video{
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************main style end **************************/
