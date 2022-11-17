@@ -1,4 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap');
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/plus-jakarta-sans-v3-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+  url("../fonts/plus-jakarta-sans-v3-latin-regular.eot?#iefix")
+  format("embedded-opentype"),
+  /* IE6-IE8 */ url("../fonts/plus-jakarta-sans-v3-latin-regular.woff2")
+  format("woff2"),
+  /* Super Modern Browsers */
+  url("../fonts/plus-jakarta-sans-v3-latin-regular.woff") format("woff"),
+  /* Modern Browsers */ url("../fonts/plus-jakarta-sans-v3-latin-regular.ttf")
+  format("truetype"),
+  /* Safari, Android, iOS */
+  url("../fonts/plus-jakarta-sans-v3-latin-regular.svg#PlusJakartaSans")
+  format("svg"); /* Legacy iOS */
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v3-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+  url("../fonts/plus-jakarta-sans-v3-latin-500.eot?#iefix")
+  format("embedded-opentype"),
+  /* IE6-IE8 */ url("../fonts/plus-jakarta-sans-v3-latin-500.woff2")
+  format("woff2"),
+  /* Super Modern Browsers */
+  url("../fonts/plus-jakarta-sans-v3-latin-500.woff") format("woff"),
+  /* Modern Browsers */ url("../fonts/plus-jakarta-sans-v3-latin-500.ttf")
+  format("truetype"),
+  /* Safari, Android, iOS */
+  url("../fonts/plus-jakarta-sans-v3-latin-500.svg#PlusJakartaSans")
+  format("svg"); /* Legacy iOS */
+}
+/* plus-jakarta-sans-600 - latin */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/plus-jakarta-sans-v3-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+  url("../fonts/plus-jakarta-sans-v3-latin-600.eot?#iefix")
+  format("embedded-opentype"),
+  /* IE6-IE8 */ url("../fonts/plus-jakarta-sans-v3-latin-600.woff2")
+  format("woff2"),
+  /* Super Modern Browsers */
+  url("../fonts/plus-jakarta-sans-v3-latin-600.woff") format("woff"),
+  /* Modern Browsers */ url("../fonts/plus-jakarta-sans-v3-latin-600.ttf")
+  format("truetype"),
+  /* Safari, Android, iOS */
+  url("../fonts/plus-jakarta-sans-v3-latin-600.svg#PlusJakartaSans")
+  format("svg"); /* Legacy iOS */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v3-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+  url("../fonts/plus-jakarta-sans-v3-latin-700.eot?#iefix")
+  format("embedded-opentype"),
+  /* IE6-IE8 */ url("../fonts/plus-jakarta-sans-v3-latin-700.woff2")
+  format("woff2"),
+  /* Super Modern Browsers */
+  url("../fonts/plus-jakarta-sans-v3-latin-700.woff") format("woff"),
+  /* Modern Browsers */ url("../fonts/plus-jakarta-sans-v3-latin-700.ttf")
+  format("truetype"),
+  /* Safari, Android, iOS */
+  url("../fonts/plus-jakarta-sans-v3-latin-700.svg#PlusJakartaSans")
+  format("svg"); /* Legacy iOS */
+}
 :root {
   --main-color-silver: #f2f4f6;
   --text-desc-color : #fff;
@@ -127,7 +202,7 @@ body {
 
 /**************************main style start **************************/
 .site-section-text {
-  width: 550px;
+ max-width: 550px;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Plus Jakarta Sans";
