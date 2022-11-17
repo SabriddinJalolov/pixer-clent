@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300&family=Roboto:wght@500;700&family=Source+Serif+Pro:wght@600&display=swap");
 :root {
   --main-color-silver: #f2f4f6;
+  --text-desc-color : #fff;
   --site-black-color: #101010;
-  --section-bg-color:
-  --text-color:
-  --hover-color:
-  --text-desc-color:
-  --img-bg-color:
-  --subtext-color:
+  --bg-color : #fff;
+  --footer-text-color : #a1a8b7;
+  --section-bg-color : #f2f4f6;
+  --footer-bg-color : #101010;
+  --img-bg-color : #e1e7ed;
+  --text-color : #101010;
+  --subtext-color : #636f87;
+  --btn-bg-color : #1aab7b;
+  --hover-color : #1aab7b;
 }
 
 * {
@@ -24,7 +28,7 @@ ul {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Plus Jakarta Sans";
   font-weight: 700;
 }
 
@@ -36,7 +40,7 @@ body {
   border-bottom: 1px solid #eeeef4;
   position: sticky;
   top: 0;
- 
+  
 }
 
 .container {
@@ -52,7 +56,7 @@ body {
   justify-content: space-between;
   align-items: center;
   
-
+  
 }
 
 .site-header__start {
@@ -91,12 +95,12 @@ body {
 }
 .site-nav__link:hover{
   
-
+  
   color: #1AAB7B;
 }
 
 .site-nav__link:active{
- color: #70d3b2;
+  color: #70d3b2;
 }
 .site-header__end-sign-up:hover{
   background: #fff;
@@ -106,7 +110,7 @@ body {
 .site-header__end-sign-up:active{
   background: #636F87;
   color: #fff;
- 
+  
 }
 
 
@@ -115,10 +119,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 12px 24px;
-  width: 156px;
-  height: 41px;
-  left: 1172px;
-  top: 24px;
   background: #101010;
   border-radius: 6px;
   color: #fff;
@@ -154,37 +154,32 @@ body {
 }
 
 .site-section_learn-more {
-  display: flex;
-
-  flex-direction: column;
-  align-items: flex-start;
   padding: 20px 40px;
-  gap: 10px;
-  width: 168px;
-  height: 59px;
   background: #1aab7b;
   border-radius: 6px;
-  border: none;
-}
-.site-section_learn-more:hover{
-  background:#fff;
-  border: 1px solid #1AAB7B;
-
-}
-.learn-more:hover{
-  color: #1AAB7B;
-
-}
-
-.learn-more {
-  width: 88px;
-  font-family: "Plus Jakarta Sans";
+  border: 1.5px solid transparent;
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
+}
+.site-section_learn-more:hover{
+  background: #FFFFFF;
+  border: 1.5px solid #1AAB7B;
+  color: #1AAB7B;
+}
+
+.site-section_learn-more:active{
+  background: #1aab7b;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.learn-more {
+  text-decoration: none;
 }
 
 .site_main_wrapper {
@@ -207,24 +202,24 @@ body {
   justify-content: center;
 }
 .main_section {
-  
-  background: #f2f4f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #f2f4f6
 }
 
 .main_section_title{
   width: 383px;
   margin: auto;
-  padding-top: 50px;
   padding-bottom: 40px;
-left: 529px;
-top: 50px;
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 140%;
-text-align: center;
-color: #101010;
+  left: 529px;
+  top: 50px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: #101010;
 }
 .it-jobs-section {
   background-color: var(--section-bg-color);
@@ -372,6 +367,7 @@ color: #101010;
 
 .section_clarify_img {
   display: flex;
+  margin-bottom: 100px;
 }
 .section_clarify_text {
   width: 488px;
@@ -410,6 +406,7 @@ color: #101010;
 }
 .section_clarify_desc_second {
   width: 592px;
+  
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
@@ -418,10 +415,12 @@ color: #101010;
   color: #636f87;
 }
 
-.section_clarify_titl {
-  margin-right: 32px;
+.section_clarify_title {
+  padding-left: 32px;
+  
   
 }
+
 .section_clarify_im{
   display: flex;
   flex-grow: 1;
@@ -438,41 +437,93 @@ color: #101010;
   justify-content: center;
   width: 411px;
   margin: auto;
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 140%;
-text-align: center;
-color: #101010;
+  margin-bottom: 16px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: #101010;
 }
 
 .imput_section_text{
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 60px;
   width: 650px;
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-text-align: center;
-color: #636F87;
-
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #636F87;
+  
 }
 /*********form start***********/
+.input-bar-section {
+  margin-bottom: 200px;
+}
+.input-bar-section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.input-bar-section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  margin: 0 auto 16px;
+  width: 411px;
+  text-align: center;
+  color: var(--text-color);
+}
+.input-bar-section-desc {
+  width: 650px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: var(--subtext-color);
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  
+  color: #636f87;
+}
 .box-form {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 1008px;
   padding: 64px 312px;
-  background-color: #f2f4f6;
+  background-color: #F2F4F6;
   border-radius: 6px;
+  margin-bottom: 200px;
+  
 }
 .name::-webkit-input-placeholder {
   font-weight: 700;
@@ -539,7 +590,7 @@ color: #636F87;
   color: var(--text-color);
 }
 .input-number::-ms-input-placeholder {
-  font-weight: 700;
+  font-weight: 7class="foter_img"00;
   font-size: 20px;
   line-height: 25px;
   color: var(--text-color);
@@ -572,7 +623,159 @@ color: #636F87;
   line-height: 150%;
 }
 
-
 /******last section end*******/
 
-/**************************main style end **************************/
+/******main style end*********/
+/********footer start******/
+.site-footer {
+  max-width: 100%;
+  background-color: var(--footer-bg-color);
+  padding-top: 100px;
+}
+
+.site-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.site-footer-start {
+  display: flex;
+}
+
+.site-footer-list {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 151px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-footer-list-end {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-footer-list-end-address {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-footer-item-link {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--img-bg-color);
+}
+
+.site-footer-item-active {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-desc-color);
+  margin-bottom: 30px;
+}
+
+.site-footer-item:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer-item {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a1a8b7;
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+.site-footer-tel {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a1a8b7;
+}
+
+.site-footer-item-name {
+  width: 280px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a1a8b7;
+}
+
+.site-footer-list-network {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  width: 216px;
+  justify-content: space-between;
+}
+
+.site-footer-list-network:first-child {
+  margin-left: 0;
+}
+
+.site-footer-end-end {
+  border-top: 1px solid #3b4155;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site-footer-end-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer-end-subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: right;
+  color: var(--bg-color);
+  margin: 0;
+}
+
+.site-footer-logo:hover {
+  opacity: 0.8;
+}
+.site-footer-logo:active {
+  opacity: 0.6;
+}
+
+.site-footer-item-link {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a1a8b7;
+}
+
+.site-footer-item-link:hover{
+  color: var(--hover-color);
+}
+
+.site-footer-item-link-active {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-desc-color);
+  text-decoration: none;
+}
+
+/********footer start******/
